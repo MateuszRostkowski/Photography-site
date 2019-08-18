@@ -43,15 +43,6 @@ Not all elements are shown on the screenshots
 Pull the repository to yor PC and open index.html in browser
 
 
-<!-- ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2 -->
 
 ## Status
 In progress, javascript, left to add interactions to the site using javascript

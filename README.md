@@ -37,6 +37,7 @@ Not all elements are shown on the screenshots
 * HTML
 * CSS
 * Javascript
+* GSAP 2.1.3
 
 
 ## Setup

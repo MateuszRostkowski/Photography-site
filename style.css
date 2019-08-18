@@ -1,6 +1,7 @@
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -14,6 +15,7 @@
     font-family: PoppinsMedium;
     src: url(./fonts/Poppins-Medium.ttf);
 }
+
 @font-face {
     font-family: PoppinsRegular;
     src: url(./fonts/Poppins-Regular.ttf);
@@ -24,6 +26,7 @@ body {
 }
 
 .portfolio {
+    overflow: hidden;
     background: radial-gradient(1267.00px at 50% -4.31%, #001C27 0%, #414141 100%);
 }
 
@@ -45,16 +48,19 @@ nav {
     font-size: 20px;
 
 }
+
 section {
     color: white;
 }
+
 .page {
     min-height: 90vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 
-.chef,.hairstyle {
+.chef,
+.hairstyle {
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -72,28 +78,29 @@ section {
     margin-top: 100px;
 }
 
-.hero img{
+.hero img {
     height: 500px;
     transition: transform 0.3s ease-out;
     cursor: pointer;
 }
+
 .hero a {
     display: flex;
 }
 
-.model-right{
+.model-right {
     transform: translate(0%, 5%);
 }
 
-.hero:hover .model-right{
+.hero:hover .model-right {
     transform: translate(0%, 0%);
 }
 
-.model-left{
+.model-left {
     transform: translate(0%, -5%);
 }
 
-.hero:hover .model-left{
+.hero:hover .model-left {
     transform: translate(0%, 0%);
 }
 
@@ -127,11 +134,12 @@ section {
     color: white;
 }
 
-.pages > div {
+.pages>div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .pages h3 {
     font-size: 24px;
     padding: 30px;
@@ -151,7 +159,7 @@ section {
     opacity: 1;
 }
 
-@keyframes dot{
+@keyframes dot {
     0% {
         transform: scale(2);
     }
@@ -168,6 +176,7 @@ section {
     width: 100%;
     position: relative;
 }
+
 .banner img {
     height: 100%;
     width: 100%;
@@ -176,6 +185,7 @@ section {
     -webkit-filter: brightness(105%);
     filter: brightness(105%);
 }
+
 .banner .barber-bg {
     object-position: center;
 }
@@ -222,7 +232,8 @@ section {
     font-size: 32px;
 }
 
-.story, .my-work {
+.story,
+.my-work {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,15 +242,19 @@ section {
     padding: 80px 0px;
 }
 
-.story-description, .work-description {
+.story-description,
+.work-description {
     width: 50%;
 }
 
-.story-description h3, .work-description h3 {
+.story-description h3,
+.work-description h3 {
     font-size: 36px;
     padding-bottom: 30px;
 }
-.story-description p, .work-description p {
+
+.story-description p,
+.work-description p {
     padding: 20px 0px;
     font-size: 20px;
 }
@@ -249,6 +264,7 @@ section {
     grid-template-columns: repeat(3, 200px);
     height: 400px;
 }
+
 .work-gallery img {
     width: 100%;
 }
@@ -264,42 +280,54 @@ section {
         grid-template-rows: 2fr 1fr;
         align-items: center;
     }
+
     .hero {
         grid-column: 2/3;
         height: auto;
     }
+
     .hero img {
         height: 500px;
     }
+
     .details {
         grid-row: 2/3;
         grid-column: 2/3;
         text-align: center;
         margin-bottom: 5px;
     }
+
     .details h1 {
         font-size: 48px;
     }
+
     .details h2 {
         font-size: 36px;
     }
+
     .details p {
         font-size: 24px;
     }
 
-    .story, .my-work {
-        flex-direction:column;
+    .story,
+    .my-work {
+        flex-direction: column;
         align-items: center;
     }
-    .story p, .my-work p {
+
+    .story p,
+    .my-work p {
         padding-bottom: 30px;
     }
-    .story-description, .work-description {
+
+    .story-description,
+    .work-description {
         width: 100%;
     }
+
     .work-gallery {
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         height: auto;
         width: 100%;
     }
@@ -311,21 +339,26 @@ section {
     .hero img {
         height: 400px;
     }
+
     .details h1 {
         font-size: 38px;
     }
+
     .details h2 {
         font-size: 26px;
     }
+
     .details p {
         font-size: 14px;
     }
 }
+
 .nav-open {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
+    opacity: 0;
     height: 50vh;
     background: white;
     z-index: 1;
@@ -340,10 +373,12 @@ section {
 .contact {
     grid-column: 2/3;
 }
+
 .nav-open h3 {
     font-size: 28px;
     padding-bottom: 40px;
 }
+
 .nav-open p {
     font-size: 18px;
 }
@@ -352,8 +387,8 @@ section {
     padding: 0px 20px;
 }
 
-.logo, .menu {
+.logo,
+.menu {
     z-index: 2;
     cursor: pointer;
 }
-

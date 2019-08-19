@@ -41,6 +41,7 @@ nav {
     align-items: center;
     padding: 20px 0px;
     color: white;
+
 }
 
 
@@ -72,7 +73,6 @@ section {
 .hero {
     overflow: hidden;
     height: 500px;
-    /* align-self: center; */
     justify-self: center;
     display: flex;
     margin-top: 100px;
@@ -214,6 +214,7 @@ section {
     right: 0;
     left: 0;
     color: black;
+    pointer-events: none;
 }
 
 .description-nav img {
@@ -334,7 +335,8 @@ section {
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px),
+screen and (max-height: 900px) {
 
     .hero img {
         height: 400px;
@@ -346,12 +348,36 @@ section {
 
     .details h2 {
         font-size: 26px;
+        padding: 0;
     }
 
     .details p {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 600px),
+screen and (max-height: 600px) {
+
+    .hero img {
+        height: 250px;
+    }
+
+    .details h1 {
+        font-size: 30px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+}
+
+
 
 .nav-open {
     position: absolute;
@@ -368,6 +394,7 @@ section {
     justify-items: center;
     align-items: center;
     text-align: center;
+    pointer-events: none;
 }
 
 .contact {

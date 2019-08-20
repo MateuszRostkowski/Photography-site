@@ -2,7 +2,7 @@ function init() {
     const slide = document.querySelectorAll('.slide');
     const pages = document.querySelectorAll('.page');
     const backgrounds = [
-        'radial-gradient(1267.00px at 50% -4.31%, #001C27 0%, #414141 100%)',
+        'radial-gradient(1560.00px at 50% -31.44%, #08364A 0%, #2D444D 100%);',
         'radial-gradient(1267.00px at 50% -4.31%, #8E0A0A 0%, #4E3E3E 100%)',
         'radial-gradient(1267.00px at 50% -4.31%, #39342F 0%, #7A6E6E 100%)'
     ];
@@ -97,17 +97,9 @@ function init() {
             )
 
         current = pageNumber;
-
-
-
-
-
-
-
     }
 
     // Detect scroll
-
     document.addEventListener("wheel", throttle(scrollChange, 1500));
     document.addEventListener("touchmove", throttle(scrollChange, 1500));
 
@@ -136,65 +128,9 @@ function init() {
         switchDots(scrollSlide);
         console.log(scrollSlide)
     };
+};
 
-    const button = document.querySelector(".menu");
-    const hamburgerLines = document.querySelectorAll(".menu line");
-    const navOpen = document.querySelector(".nav-open");
-    const contact = document.querySelector(".contact");
-    const social = document.querySelector(".social");
-    const logo = document.querySelector(".logo");
 
-    const tl = new TimelineMax({ paused: true, reversed: true });
-
-    tl.to(
-        navOpen,
-        0.5, { y: 0 })
-        .fromTo(
-            contact,
-            0.5,
-            { opacity: 0, y: 10 },
-            { opacity: 1, y: 0 },
-            "-=0.1"
-        )
-        .fromTo(
-            social,
-            0.5,
-            { opacity: 0, y: 10 },
-            { opacity: 1, y: 0 },
-            "-=0.5"
-        )
-        .fromTo(
-            logo,
-            0.3,
-            { color: "white" },
-            { color: "black" },
-            "-=1"
-        )
-        .fromTo(
-            hamburgerLines,
-            0.2,
-            { stroke: "white" },
-            { stroke: "black" },
-            "-=1"
-        )
-        .fromTo(
-            navOpen,
-            0.3,
-            {display: "none"},
-            {display: "grid"},
-            "-=0.5"
-        )
-
-    console.log(button);
-    button.addEventListener("click", function() {
-        tl.reversed() ? tl.play() : tl.reverse();
-    });
-    button.addEventListener("click", function () {
-        console.log("XD");
-    });
-
-    console.log(button);
-}
 
 function throttle(func, limit) {
   let inThrottle;
@@ -208,6 +144,5 @@ function throttle(func, limit) {
     }
   };
 }
-
 
 init();

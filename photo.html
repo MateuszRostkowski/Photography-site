@@ -10,13 +10,34 @@
 <body>
 
     <main>
-        <header class="header-description">
-
+        <header class="portfolio-header">
+            <nav>
+                <h3 class="logo">Mateusz Rostkowski</h3>
+                <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="1.5" x2="43" y2="1.5" stroke="black" stroke-width="3" />
+                    <line y1="11.5" x2="28" y2="11.5" stroke="black" stroke-width="3" />
+                    <line y1="21.5" x2="16" y2="21.5" stroke="black" stroke-width="3" />
+                </svg>
+                <div class="nav-open">
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <p>+48612672622</p>
+                    </div>
+                    <div class="social">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <img src="./img/Facebook.svg" alt="">
+                            <img src="./img/Twitter.svg" alt="">
+                            <img src="./img/Instagram.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <div class="banner">
 
             <img src="./img/photo-bg.jpg" alt="">
-            <div class="description-nav">
+            <!-- <div class="description-nav">
                 <h3 class="logo">Mateusz Rostkowski</h3>
                 <svg
                     class = "menu"
@@ -41,7 +62,7 @@
                         <img src="./img/Instagram.svg" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="author">
 
                 <h1>Elena Morell</h1>
@@ -76,6 +97,12 @@
         </div>
 
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous">
+        </script>
+    <script src="./navOpen-black.js"></script>
 </body>
 </html>

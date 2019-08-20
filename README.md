@@ -1,14 +1,3 @@
-<!-- # Photography-site - portfolio site
-
-Simple portfolio site created with Figma, HTML, CSS, Javascript
-
-#General Info
-
-
-#Technologies
-
-#Setup -->
-
 
 # Photography-site - portfolio site
 Simple portfolio site created with Figma, HTML, CSS, Javascript
@@ -21,6 +10,7 @@ Simple portfolio site created with Figma, HTML, CSS, Javascript
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
+* [TODO](#TODO)
 
 ## General info
 The project was created with [Dev Ed](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
@@ -54,3 +44,8 @@ Created by [Mateusz Rostkowski](https://github.com/MateuszRostkowski) - feel fre
 You can find me also on:
 * [Linkedin](https://www.linkedin.com/in/mateusz-rostkowski-a20b6518a/)
 * [Github](https://github.com/MateuszRostkowski)
+
+#TODO
+
+* Fix bug with not changing the color of h3 in barber and chef portfolio site
+* Add transitions to portfolio sites

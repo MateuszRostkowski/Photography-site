@@ -45,7 +45,7 @@ You can find me also on:
 * [Linkedin](https://www.linkedin.com/in/mateusz-rostkowski-a20b6518a/)
 * [Github](https://github.com/MateuszRostkowski)
 
-#TODO
+## TODO
 
 * Fix bug with not changing the color of h3 in barber and chef portfolio site
 * Add transitions to portfolio sites

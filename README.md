@@ -27,7 +27,8 @@ Not all elements are shown on the screenshots
 * HTML
 * CSS
 * Javascript
-* GSAP 2.1.3
+* GSAP - TweenMax - 2.1.3
+* GSAP - TimelineMax - 2.1.3
 
 
 ## Setup

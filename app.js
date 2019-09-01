@@ -38,6 +38,7 @@ function init() {
 
 
 
+
         const tl = new TimelineMax({
             onStart: function(){
                 slide.forEach(slide => {
@@ -51,9 +52,25 @@ function init() {
             }
         });
 
-        tl.fromTo(currentLeft, 0.3, { y: "-10%" }, { y: "-100%" })
-            .fromTo(currentRight, 0.3, { y: "10%" }, { y: "-100%" }, "-=0.2")
-            .to(portfolio, 0.3, {backgroundImage: backgrounds[pageNumber]})
+        console.log(backgrounds[pageNumber])
+
+        tl.to(
+            portfolio,
+            0.3,
+            { backgroundImage: backgrounds[pageNumber] }
+            )
+            .fromTo(
+                currentLeft,
+                0.3,
+                { y: "-10%" },
+                { y: "-100%" }
+                )
+            .fromTo(currentRight,
+                0.3,
+                { y: "10%" },
+                { y: "-100%" },
+                "-=0.2"
+            )
             .fromTo(
                 currentPage,
                 0.3,

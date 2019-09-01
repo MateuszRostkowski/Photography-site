@@ -8,6 +8,7 @@ function navOpen() {
     const contact = document.querySelector(".contact");
     const social = document.querySelector(".social");
     const logo = document.querySelector(".logo");
+    const links = document.querySelector("a");
 
     const tl = new TimelineMax({ paused: true, reversed: true });
 
@@ -16,31 +17,31 @@ function navOpen() {
         0.1, { y: 0 })
         .fromTo(
             contact,
-            0.3,
-            { opacity: 0, y: 10 },
+            0.8,
+            { opacity: 0, y: -60 },
             { opacity: 1, y: 0 },
-            "-=0.1"
+            "-=0.5"
         )
         .fromTo(
             navOpen,
             0.4,
-            { opacity: 0, pointerEvents: "none", y: -80 },
+            { opacity: 0, pointerEvents: "none", y: -100 },
             { opacity: 1, pointerEvents: "auto", y: 0 },
             "-=0.1"
         )
         .fromTo(
             social,
             0.8,
-            { opacity: 0, y: 10 },
+            { opacity: 0, y: -60 },
             { opacity: 1, y: 0 },
             "-=0.5"
         )
         .fromTo(
-            logo,
+            links,
             0.8,
             { color: "white" },
             { color: "black" },
-            "-=1"
+            "-=0.1"
         )
         .fromTo(
             hamburgerLines,

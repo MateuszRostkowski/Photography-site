@@ -25,6 +25,11 @@ body {
     font-family: PoppinsLight;
 }
 
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
 .portfolio {
     overflow: hidden;
     background: radial-gradient(1267.00px at 50% -4.31%, #001C27 0%, #414141 100%);
